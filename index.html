@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Website</title>
+    <title>'O-ra : Jeju' Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #39ff14; /* Neon Green Background */
+            background: url('your_image_url') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .project-title {
+            font-size: 32px;
+            margin-bottom: 10px;
         }
 
         .sentence {
-            font-size: 20px;
+            font-size: 16px;
             color: #333;
             margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -29,11 +40,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Simple Website</h1>
+        <div class="project-title">'O-ra : Jeju' Project</div>
         <p>Experience the serene beauty of Jeju Island, a natural wonder located in South Korea known for its lush greenery and volcanic landscapes.</p>
         <div class="sentence">
             <!-- You can put your sentence here. -->
-            This is where you can put a sentence.
+            원하는 여행 스타일을 입력해보세요. (예: 2인 커플이 2박 3일동안 여행할 분위기 좋은 여행지를 추천해줘)
         </div>
     </div>
 </body>
