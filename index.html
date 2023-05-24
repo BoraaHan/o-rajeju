@@ -76,7 +76,7 @@
     
     <py-script> 
         
-        import pandas as pd
+<!--         import pandas as pd -->
 
         def read_data_from_github(url):
             # GitHub URL에서 raw 데이터 파일의 URL 추출
@@ -92,11 +92,12 @@
 
         # GitHub URL을 지정하여 함수 호출
         github_url = 'https://github.com/BoraaHan/o-rajeju/blob/main/%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%89%E1%85%B5%E1%86%A8%E1%84%8C%E1%85%A5%E1%86%B7_20.csv'
-        df = read_data_from_github(github_url)
+<!--         df = read_data_from_github(github_url) -->
 
-        if df is not None:
-            print(df.head())
-       
+<!--         if df is not None: -->
+<!--             print(df.head()) -->
+       df =pd.read_csv(open_url(github_url))
+        print(df)
        
         keyword = str(input())
 
