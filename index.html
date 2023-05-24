@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>'O-ra : Jeju' Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Pretendard', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://unsplash.com/ko/%EC%82%AC%EC%A7%84/oMsXE4kIKC8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink') no-repeat center center fixed; 
+            color: black;
+            background: url('your_image_url') no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -18,8 +20,9 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000000;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .project-title {
@@ -27,14 +30,11 @@
             margin-bottom: 10px;
         }
 
-        .sentence {
+        .input-field {
             font-size: 16px;
-            color: #333;
             margin: 20px 0;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
     </style>
 </head>
@@ -42,10 +42,7 @@
     <div class="container">
         <div class="project-title">'O-ra : Jeju' Project</div>
         <p>Experience the serene beauty of Jeju Island, a natural wonder located in South Korea known for its lush greenery and volcanic landscapes.</p>
-        <div class="sentence">
-            <!-- You can put your sentence here. -->
-            원하는 여행 스타일을 입력해보세요. (예: 2인 커플이 2박 3일동안 여행할 분위기 좋은 여행지를 추천해줘)
-        </div>
+        <input type="text" class="input-field" placeholder="Enter your sentence here">
     </div>
 </body>
 </html>
