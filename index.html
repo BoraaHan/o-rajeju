@@ -32,7 +32,7 @@
             text-shadow: 2px 2px 4px #000000;
         }
 
-        .text-container, .input-field {
+        .text-container, .form-container {
             width: 80%;
             max-width: 800px;
             margin: 0 auto;
@@ -40,9 +40,18 @@
 
         .input-field {
             font-size: 16px;
-            margin: 20px 0;
             padding: 10px;
             box-sizing: border-box;
+            width: 70%;
+        }
+
+        .submit-btn {
+            font-size: 16px;
+            padding: 10px;
+            margin-left: 10px;
+            box-sizing: border-box;
+            width: 28%;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -52,9 +61,10 @@
         <div class="text-container">
             <p>Experience the serene beauty of Jeju Island, a natural wonder located in South Korea known for its lush greenery and volcanic landscapes.</p>
         </div>
-        <input type="text" class="input-field" placeholder="원하는 제주 여행 스타일을 입력해보세요(ex: 힙한, 조용한, 바다, 데이트)">
-        
+        <form class="form-container">
+            <input type="text" class="input-field" placeholder="원하는 제주 여행 스타일을 입력해보세요(ex: 힙한, 조용한, 바다, 데이트)">
+            <button type="submit" class="submit-btn">Find Personalized Trip</button>
+        </form>
     </div>
-    <py-script> print("hi") </py-script>
 </body>
 </html>
