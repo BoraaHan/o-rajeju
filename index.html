@@ -26,25 +26,32 @@
 
         .project-title {
             font-family: 'Nanum Brush Script', cursive;
-            font-size: 72px;  /* increased font size */
+            font-size: 72px;
             margin: 20px 0;
             color: white;
             text-shadow: 2px 2px 4px #000000;
         }
 
+        .text-container, .input-field {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .input-field {
             font-size: 16px;
-            margin: 20px auto;
+            margin: 20px 0;
             padding: 10px;
             box-sizing: border-box;
-            width: 50%;  /* decreased width */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="project-title"> O-ra : Jeju </div>
-        <p>Experience the serene beauty of Jeju Island, a natural wonder located in South Korea known for its lush greenery and volcanic landscapes.</p>
+        <div class="text-container">
+            <p>Experience the serene beauty of Jeju Island, a natural wonder located in South Korea known for its lush greenery and volcanic landscapes.</p>
+        </div>
         <input type="text" class="input-field" placeholder="원하는 제주 여행 스타일을 입력해보세요(ex: 힙한, 조용한, 바다, 데이트)">
     </div>
 </body>
