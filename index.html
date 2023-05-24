@@ -70,13 +70,34 @@
     </div>
     
     <py-env>
-        openai
-        pandas
+        - openai
+        - pandas
     </py-env>
     
     <py-script> 
-        df = pandas.read_csv("https://github.com/BoraaHan/o-rajeju/blob/main/%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%89%E1%85%B5%E1%86%A8%E1%84%8C%E1%85%A5%E1%86%B7_20.csv", sep=",")
+        
+        import pandas as pd
 
+        def read_data_from_github(url):
+            # GitHub URL에서 raw 데이터 파일의 URL 추출
+            raw_url = url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/')
+
+            try:
+                # 데이터 파일을 DataFrame으로 읽어오기
+                df = pd.read_csv(raw_url)
+                return df
+            except Exception as e:
+                print(f"데이터를 읽어오는 동안 오류가 발생했습니다: {str(e)}")
+                return None
+
+        # GitHub URL을 지정하여 함수 호출
+        github_url = 'https://github.com/BoraaHan/o-rajeju/blob/main/%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%89%E1%85%B5%E1%86%A8%E1%84%8C%E1%85%A5%E1%86%B7_20.csv'
+        df = read_data_from_github(github_url)
+
+        if df is not None:
+            print(df.head())
+       
+       
         keyword = str(input())
 
         for i in range(len(df)):
